@@ -360,6 +360,19 @@ header div h1{
     overflow: hidden;
     border-radius: 15px;
     // padding: 10px;
+        .imagem-projecto{
+            width: 400px;
+            height: 200px;            
+        }
+
+        .card1{
+            background-image: url(/itens/Imagens/jordan\ Shoes\ Site\ Imagem.jpeg);
+            background-size: cover;
+        }
+        .card2{
+            background-image: url(/itens/Imagens/Modelo\ portfolio\ img.png);
+            background-size: contain;
+        }
   }
 
 
@@ -383,6 +396,11 @@ header div h1{
                 background-color: rgba(87, 87, 236, 0.836);
                 color: white;
                 cursor: pointer;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
 
             }
     }

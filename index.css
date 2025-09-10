@@ -316,6 +316,18 @@ header.rolagem button#btn-menu svg {
   overflow: hidden;
   border-radius: 15px;
 }
+.container-slide .box-slide .imagem-projecto {
+  width: 400px;
+  height: 200px;
+}
+.container-slide .box-slide .card1 {
+  background-image: url(/itens/Imagens/jordan\ Shoes\ Site\ Imagem.jpeg);
+  background-size: cover;
+}
+.container-slide .box-slide .card2 {
+  background-image: url(/itens/Imagens/Modelo\ portfolio\ img.png);
+  background-size: contain;
+}
 .container-slide .descricao-projecto {
   display: flex;
   flex-direction: column;
@@ -337,6 +349,10 @@ header.rolagem button#btn-menu svg {
   background-color: rgba(87, 87, 236, 0.836);
   color: white;
   cursor: pointer;
+}
+.container-slide .descricao-projecto button a {
+  text-decoration: none;
+  color: white;
 }
 .container-slide img {
   width: 400px;
