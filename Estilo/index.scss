@@ -93,6 +93,11 @@ header div h1{
     left: 0;
     padding: 30px;
     z-index: 999;
+    background-color: #282c37c9;
+    backdrop-filter: blur(5px);
+    h1{
+        color: white;
+    }
 
     
         div.navbar .itens-nav{
@@ -110,15 +115,27 @@ header div h1{
                    border: none;
                    border-radius: 16px;
                 }
-            
-                a{
+              
+                a {
                     text-decoration: none;
                     color: white;
                     font-family: pop;
-                }          
+                    transform: scale(1); 
+                    transition: transform 0.3s ease, background-color 0.3s ease;
+                    padding: 6px;
+                    }
+
+                a:hover {
+                    background-color: white;
+                    transform: scale(1.6); 
+                    border-radius: 16px;
+                    color: black;
+                    }
+         
         }
     
 }
+
     header.rolagem{
             // background-color: #1259c4a1;
             background-color: rgba(245, 222, 179, 0.178);
@@ -465,6 +482,10 @@ header div h1{
                     font-family: Arial, Helvetica, sans-serif;
                     font-size: 13px;
                 }
+                   a{
+                        text-decoration: none;
+                        color: black;
+                    }
             }
 
             .box-social{
@@ -486,6 +507,11 @@ header div h1{
                         p{
                             font-size: 12px;
                         }
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color: black;
                     }
             }
     }
