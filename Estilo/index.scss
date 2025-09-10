@@ -1,0 +1,509 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+// ===============CONFIGURAÇÕES GERAIS=================
+@font-face {
+    font-family: logo;
+    src: url('/itens/fonts/GenshinImpactFont-Regular.ttf');
+}
+@font-face {
+    font-family: pop;
+    src: url('/itens/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: popBold;
+    src: url('/itens/fonts/Poppins-SemiBold.ttf');
+}
+@font-face {
+    font-family: seta;
+    src: url('/itens/fonts/PWNewArrows.ttf');
+}
+:root{
+    --destaque: #282c37;
+}
+svg{
+    width: 40px;
+    height: 40px;
+    fill: #282c37;
+}
+#btn-menu{
+    display: none;
+}
+body{
+    // background-color:rgb(221, 220, 220);
+    background-image: linear-gradient( to right, #e2e2e2,white,#e2e2e2);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  
+}
+.container-hero{
+
+    background-image: url('/itens/Imagens/fundo\ site.png');
+    // backdrop-filter: blur(5px);
+    // background-color: #918e925d;
+   
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // backdrop-filter: blur(5px);
+    // background-color: #918e925d;
+    h1{
+        font-family: popBold;
+    }
+   
+}
+.container-flex{
+ width: 80%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+//  overflow: hidden;
+ 
+//    background-color: #918e929c;
+
+}
+header div h1{
+    font-family: logo;
+    cursor: pointer;
+}
+
+
+
+// ==========CORPO DO SITE => CABEÇALHO============
+ header{
+    width: 100vw;
+    display: flex;
+    gap: 325px;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    z-index: 999;
+
+    
+        div.navbar .itens-nav{
+            display: flex;
+            gap: 46px;
+
+                    button a{
+                   color: var(--destaque);
+                  
+                }
+                button{
+                   color: var(--destaque);
+                   background-color: white;
+                   padding: 5px 14px;
+                   border: none;
+                   border-radius: 16px;
+                }
+            
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-family: pop;
+                }          
+        }
+    
+}
+    header.rolagem{
+            // background-color: #1259c4a1;
+            background-color: rgba(245, 222, 179, 0.178);
+            backdrop-filter: blur(18px);
+           div.navbar div a{
+                color: rgb(31, 30, 30);
+            }
+            button#btn-menu svg{
+                fill: black;
+            }
+               
+        }
+  
+
+        .icon-menu,.menu-hamburger{
+            display: none;
+           
+           
+        }
+          .menu-computador {
+            display: block;
+  }
+
+// ==========CORPO DO SITE => APRESENTAÇÃO============
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+        div.parte-texto{   
+            h2,p{
+                font-family: pop;
+            }   
+            p{
+                color: #0000008e;
+            }
+            h1{
+                font-family: popBold;
+                font-size: 50px;
+                color: var(--destaque);
+            }   
+
+                div.icones{
+                    display: flex;
+                    align-items: center;
+                    gap: 26px;
+                    margin-top: 35px;
+                }
+                div.icones .svgs svg, img{
+                    width: 40px;
+                    height: 40px;
+                    fill: #282c37;
+                }
+          
+        }
+        div.parte-imagem{
+                img{
+                width: 500px;
+                padding-top: 50px;
+              
+            }
+        } 
+}
+
+.frase-efeito{
+    background-color: #1c1e22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    margin-top: -55px;
+    color: #ffffffa4;
+    font-family: pop;
+    font-size: 12px; 
+    //  backdrop-filter: blur(5px);
+}
+
+// ==========CORPO DO SITE => SOBRE MIM============
+.sobremim-Caixa h1{
+    font-family: popBold;
+    color: var(--destaque);
+}
+.sobremim-container{
+    display: grid;
+    grid-template-areas: 
+    'texto-one boneco texto-two'
+    'texto-three texto-three texto-three';
+    gap: 85px;
+    padding: 20px;
+
+    .caixa-texto{
+            // border: 1px solid black;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 4px 4px 41px 0px #0000005e;
+            text-align: justify;
+
+          .seta{
+            font-family: seta;
+            font-size: 90px;
+          }
+          .set1{
+            transform: rotate(240deg);
+          }
+         
+          .set2{
+            transform: scaleY(-1);
+          }
+        
+    }
+
+        .texto1{
+            grid-area: texto-one;
+            text-align: center;
+            font-family: pop;
+            font-size: 13px;
+            
+        }
+        .boneco{
+            grid-area: boneco;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+                .cabeca{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    background-color: #282c37;
+                }
+                .corpo{
+                    width: 150px;
+                    height: 80px;
+                    border-radius: 30%;
+                    background-color: #282c37;
+                }
+        }
+           .texto2{
+            grid-area: texto-two;
+            text-align: center;
+            font-family: pop;
+            font-size: 13px;
+        }
+        .texto3{
+            grid-area: texto-three;
+            text-align: center;
+            padding: 60px;
+            font-family: pop;
+        }
+}
+
+// ==========CORPO DO SITE => HABILIDADES============
+
+.caixa-habilidades{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+        h2{
+            font-family: popBold;
+            color: #282c3788;
+            border-bottom: 1px solid rgba(80, 80, 80, 0.308);
+        }
+}
+.habilidade{
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, 200px);  
+    
+        .chabilidades{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            font-family: pop;
+            font-size: 13px;
+            background-color: #f5deb3a1;
+            // background-color: wheat;
+            padding: 18px;
+            border-radius: 10px;
+            color: #282c37ad;
+     
+        }
+    
+        .chabilidades img{
+            width: 55px;
+        }
+}
+
+// ==========CORPO DO SITE => PROJECTOS============
+.area-slider{
+    width: 900px;
+    overflow-x: scroll;
+    position: relative;
+    h1{
+         border-bottom: 1px solid rgba(80, 80, 80, 0.308);
+         margin-bottom: 30px;
+    }
+}
+.area-slider {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.container-slide {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  width: 100%;
+
+
+  .box-slide {
+    min-width: 100%;
+    max-width: 100%;
+    flex-shrink: 0;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: justify;
+    overflow: hidden;
+    border-radius: 15px;
+    // padding: 10px;
+  }
+
+
+    .descricao-projecto{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-right: 20px;
+            h4{
+                font-family: pop;
+                font-size: 30px;
+                 border-bottom: 1px solid rgba(80, 80, 80, 0.308);
+            }
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+            }
+            button{
+                padding: 6px 50px;
+                border: none;
+                background-color: rgba(87, 87, 236, 0.836);
+                color: white;
+                cursor: pointer;
+
+            }
+    }
+    img{
+        width: 400px;
+        height: 250px;
+    }
+
+    
+}
+.botoes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    
+   
+
+        button{
+            border: none;
+            border-radius: 50%;
+            padding: 25px 30px;
+            background-color: rgb(15, 90, 160);
+            color: white;
+            font-family: popBold;font-size: 15px;
+             cursor: pointer;
+        }
+}
+
+
+
+// ==========CORPO DO SITE => CONTACTO============
+.container.area-contacto{
+    background-color: #1c1e22ee;
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    .caixamensagem{
+         background-color: rgba(255, 255, 255, 0.911);
+            backdrop-filter: blur(10px);
+            padding: 16px;
+            width: 80%;
+            height: 600px;
+            border-radius: 12px;
+
+            flex-direction: row;
+            gap: 55px;
+
+            .mensagem-autor{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+
+                strong{
+                    color: #1259c4a1;
+                }
+                .apelo{
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 13px;
+                }
+            }
+
+            .box-social{
+                display: flex;
+                background-color: white;
+                padding: 8px;
+                border-radius: 10px;
+                gap: 12px;
+                box-shadow: 0px 0px 10px 2px #00000049;
+                cursor: pointer;
+                    svg{
+                        width: 30px;
+                        height: 30px;
+                        fill: #1259c4a1;
+                    }
+
+                    .info-social{
+                        font-family: Arial, Helvetica, sans-serif;
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+            }
+    }
+
+        form{
+            background-color: white;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 10px;
+             box-shadow: 0px 0px 30px 2px #00000049;
+
+                input{
+                    width: 400px;
+                    height: 45px;
+                    outline: none;
+                    padding: 8px;
+                    border: 1px solid #1259c456;
+                }
+                textarea{
+                    width: 400px;
+                    height: 90px;
+                    resize: none;
+                    outline: none;
+                    padding: 8px;
+                    border: none;
+                }
+                button{
+                    width: 400px;
+                    height: 45px;
+                    border: none;
+                    background-color: #1259c456;
+                    cursor: pointer;
+                }
+        }
+}
