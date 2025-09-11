@@ -6,19 +6,19 @@
 
 @font-face {
   font-family: logo;
-  src: url("/itens/fonts/GenshinImpactFont-Regular.ttf");
+  src: url("/itens/fonts/GenshinImpactFont-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: pop;
-  src: url("/itens/fonts/Poppins-Regular.ttf");
+  src: url("/itens/fonts/Poppins-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: popBold;
-  src: url("/itens/fonts/Poppins-SemiBold.ttf");
+  src: url("/itens/fonts/Poppins-SemiBold.ttf") format("truetype");
 }
 @font-face {
   font-family: seta;
-  src: url("/itens/fonts/PWNewArrows.ttf");
+  src: url("/itens/fonts/PWNewArrows.ttf") format("truetype");
 }
 :root {
   --destaque: #282c37;
